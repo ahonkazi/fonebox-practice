@@ -15,7 +15,7 @@ const DesktopNav = () => {
 
         <div className="justify-between items-center hidden lg:flex">
             <div className="logo">
-                <Link href={'/'}><Image src={Logo} /></Link>
+                <Link href={'/'}><Image alt='logo' src={Logo} /></Link>
             </div>
             <ul className='flex items-center'>
                 {themeContext?.menuItems?.map(item =>

@@ -15,7 +15,7 @@ const Sidebar = () => {
                 <div className="shrink-0">
                     <div className="sidebar-header py-4 px-6 flex justify-between items-center">
                         <div className="logo">
-                            <Image className='' src={Logo} />
+                            <Image alt='logo' className='' src={Logo} />
                         </div>
 
                         <span onClick={() => themeContext.setSidebarStatus(!themeContext.sidebarStatus)}>
