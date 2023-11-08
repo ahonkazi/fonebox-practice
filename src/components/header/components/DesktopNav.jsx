@@ -18,8 +18,8 @@ const DesktopNav = () => {
                 <Link href={'/'}><Image alt='logo' src={Logo} /></Link>
             </div>
             <ul className='flex items-center'>
-                {themeContext?.menuItems?.map(item =>
-                    <li className='navItem'>
+                {themeContext?.menuItems?.map((item, index) =>
+                    <li key={index} className='navItem'>
                         <Link href={item?.path} className={`navLink ${pathName === item.path ? 'active' : ''}`}>{item?.title}</Link>
                     </li>
                 )}

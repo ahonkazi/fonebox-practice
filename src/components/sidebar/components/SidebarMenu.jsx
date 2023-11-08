@@ -16,8 +16,8 @@ const SidebarMenu = () => {
                 </Link>
             </li>
             {
-                themeContext.menuItems?.map(item =>
-                    <li onClick={() => themeContext.setSidebarStatus(false)} className='w-full'>
+                themeContext.menuItems?.map((item, index) =>
+                    <li key={index} onClick={() => themeContext.setSidebarStatus(false)} className='w-full'>
                         <Link href={item.path} className={`font-medium uppercase ${pathName === item.path ? 'text-Purple' : 'text-white'} w-full block cursor-pointer font-Exo  px-2 py-1.5 rounded-md  text-lg`}>
                             {item.title}
                         </Link>

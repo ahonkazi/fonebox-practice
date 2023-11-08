@@ -12,7 +12,7 @@ const MobileNav = () => {
     return (
         <div className="justify-between items-center flex lg:hidden">
             <div className="logo">
-                <Link href={'/'}><Image src={Logo} /></Link>
+                <Link href={'/'}><Image src={Logo} alt='logo' /></Link>
             </div>
 
             <span onClick={() => themeContext.setSidebarStatus(!themeContext.sidebarStatus)}>
