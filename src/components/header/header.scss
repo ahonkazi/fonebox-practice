@@ -1,0 +1,16 @@
+.navItem {
+    .navLink {
+        @apply px-4 duration-300;
+
+        &:hover {
+            @apply text-Coral;
+
+        }
+
+        &.active {
+            @apply text-Coral;
+
+        }
+
+    }
+}
