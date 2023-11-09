@@ -29,8 +29,8 @@ const HeroLeftContent = () => {
                 <p className='text-[#171717] lg:text-Gray text-base md:text-base px-8 sm:px-16 lg:px-0  2xl:text-lg font-Inter font-normal leading-[160%] mt-5'>
                     We meet you where you are in your journey with market leading hardware, sottware, and services to make you more resilient, agile, and sustainable.
                 </p>
-                <div className="hero-button-group w-full py-8 font-Inter font-medium grid grid-cols-1 sm:grid-cols-2 lg:flex gap-4">
-                    <button className='lg:px-16 text-sm  py-2.5 2xl:px-20 2xl:py-3 rounded-full sm:rounded-md relative  bg-Coral text-white'>
+                <div className="hero-button-group px-6 lg:px-0 w-full py-8 font-Inter font-medium grid grid-cols-1 sm:grid-cols-2 lg:flex gap-4">
+                    <button className='lg:px-16 hover:bg-transparent hover:text-Coral hover:border-Coral border  border-transparent duration-300 text-sm lg:text-base  py-2.5 2xl:px-20 2xl:py-3 rounded-full sm:rounded-md relative  bg-Coral text-white'>
                         Contact us
                         <span className='absolute -top-[50%] -left-5 pointer-events-none  '>
                             <svg className='w-[50px] h-[50px]' viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -38,11 +38,11 @@ const HeroLeftContent = () => {
                             </svg>
                         </span>
                     </button>
-                    <button className='lg:px-8 py-2.5 2xl:px-10 2xl:py-3 rounded-full sm:rounded-md shrink-0 bg-Blue text-white  lg:border lg:border-LightGray'>Learn more</button>
+                    <button className='lg:px-8 lg:text-base  py-2.5 2xl:px-10 2xl:py-3 rounded-full sm:rounded-md shrink-0 bg-Blue lg:bg-transparent lg:text-Gray text-white  lg:border lg:border-LightGray'>Learn more</button>
 
                 </div>
                 <div className="clients mt-4 gap-4 lg:gap-0 flex items-center flex-col-reverse justify-center lg:flex-row lg:justify-start">
-                    <div className="images flex ml-[9px] lg:ml-0">
+                    <div className="images flex ml-[18px] lg:ml-0">
                         {
                             clients.map((item, index) =>
                                 <Image style={{ "transform": `translateX(-${index * 9}px)` }} className={`w-[50px] 2xl:w-[57px] border-[4px] border-white h-[50px] 2xl:h-[57px] rounded-full`} src={item?.img} alt='client' />

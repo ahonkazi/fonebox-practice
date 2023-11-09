@@ -1,5 +1,5 @@
 "use client"
-import React, { useEffect } from 'react'
+import React from 'react'
 import './HeroSection.scss'
 import HeroBg from '../../_assets/hero-bg.svg'
 import HeroLeftContent from './HeroLeftContent'
@@ -7,7 +7,24 @@ import RightImage from './RightImage'
 const HeroSection = () => {
 
   return (
-    <main style={{ backgroundImage: "url(" + HeroBg?.src + ")" }} className='relative py-8 bg-no-repeat bg-top sm:bg-right-bottom'>
+    <>
+      <main style={{ backgroundImage: "url(" + HeroBg?.src + ")" }} className='relative hidden md:block bg-white py-8 bg-no-repeat bg-top sm:bg-right-bottom'>
+        <MainContent />
+      </main>
+      <main className='relative block md:hidden bg-white py-8 bg-no-repeat bg-top sm:bg-right-bottom'>
+        <MainContent />
+      </main>
+    </>
+  )
+}
+
+export default HeroSection
+
+
+
+const MainContent = () => {
+  return (
+    <>
       <div className="wrapper flex items-center flex-col   site-container justify-between lg:flex-row">
         <HeroLeftContent />
         <RightImage />
@@ -34,8 +51,6 @@ const HeroSection = () => {
           <path fill-rule="evenodd" clip-rule="evenodd" d="M125.94 53.5985C125.865 53.4951 125.644 53.2584 125.444 53.1037C124.502 52.2807 122.954 51.21 122.506 50.8808C118.655 47.7007 114.175 44.5536 109.445 42.6148C109.049 42.4522 108.856 42.0088 109.011 41.6355C109.191 41.1999 109.641 41.0204 110.038 41.1829C114.904 43.1779 119.503 46.4463 123.508 49.6167C123.937 50.011 125.51 51.0925 126.469 51.9226C126.818 52.2113 127.098 52.472 127.255 52.682C127.375 52.8766 127.441 53.0491 127.464 53.2039C127.552 53.5314 127.492 53.9436 127.325 54.3122C127.132 54.7423 126.783 55.1814 126.334 55.5795C125.421 56.4425 124.035 57.3299 122.934 58.0432C122.307 58.4411 121.764 58.8008 121.532 59.0697C119.543 61.3838 119.284 64.698 121.43 68.1982C121.646 68.5779 121.536 69.0426 121.173 69.2577C120.81 69.4728 120.334 69.3504 120.092 69.0326C117.538 64.7834 117.95 60.8762 120.348 58.0747C120.938 57.3703 123.072 56.2076 124.618 55.0218C125.082 54.6298 125.475 54.2808 125.733 53.9499C125.814 53.8378 125.861 53.7841 125.915 53.6608C125.917 53.6615 125.945 53.6004 125.94 53.5985Z" fill="#FFE0D6" />
         </svg>
       </div>
-    </main>
+    </>
   )
 }
-
-export default HeroSection

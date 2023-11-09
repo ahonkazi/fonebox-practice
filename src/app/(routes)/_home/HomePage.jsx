@@ -7,7 +7,6 @@ import PortfolioSection from './_components/PortfolioSection/PortfolioSection'
 import ExperienceProductSection from './_components/ExperienceProductSection/ExperienceProductSection'
 import ProductsSection from './_components/ProductsSection/ProductsSection'
 import TestimonialSection from './_components/TestimonialSection/TestimonialSection'
-
 const HomePage = () => {
     return (
         <LayoutDefault>

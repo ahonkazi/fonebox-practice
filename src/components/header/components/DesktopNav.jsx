@@ -5,22 +5,30 @@ import Image from 'next/image'
 import Logo from '../assets/logo.svg'
 import '../header.scss'
 import { GetThemeContext } from '@/context/ThemeContext'
-import { usePathname } from 'next/navigation'
+import { usePathname, useRouter } from 'next/navigation'
 import { VscClose } from 'react-icons/vsc'
 import { FiSearch } from 'react-icons/fi'
 const DesktopNav = () => {
     const themeContext = useContext(GetThemeContext);
     const pathName = usePathname();
+    const router = useRouter();
+    const handleTop = (path) => {
+        if (pathName === path) {
+            window.scrollTo(0, 0)
+        } else {
+            router.replace(path);
+        }
+    }
     return (
 
         <div className="justify-between items-center hidden lg:flex">
             <div className="logo">
-                <Link href={'/'}><Image alt='logo' src={Logo} /></Link>
+                <button onClick={() => handleTop('/')}><Image alt='logo' src={Logo} /></button>
             </div>
             <ul className='flex items-center'>
                 {themeContext?.menuItems?.map((item, index) =>
-                    <li key={index} className='navItem'>
-                        <Link href={item?.path} className={`navLink ${pathName === item.path ? 'active' : ''}`}>{item?.title}</Link>
+                    <li onClick={() => handleTop(item.path)} key={index} className='navItem'>
+                        <p className={`navLink cursor-pointer ${pathName === item.path ? 'active' : ''}`}>{item?.title}</p>
                     </li>
                 )}
             </ul>
@@ -45,7 +53,7 @@ const DesktopNav = () => {
                         </defs>
                     </svg>
                 </button>
-                <button className='px-4 py-2 rounded bg-Coral text-white'>Sign in</button>
+                <button className='px-4 py-2 rounded bg-Coral border border-transparent hover:bg-transparent hover:border-Coral hover:text-Coral duration-300 text-white'>Sign in</button>
             </div>
         </div>
 
