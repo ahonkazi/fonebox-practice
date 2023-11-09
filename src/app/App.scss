@@ -12,7 +12,11 @@ html {
 }
 
 .site-container {
-    @apply px-4 sm:px-[50px] md:px-[100px] lg:px-[55px] xl:px-[100px] 2xl:px-[200px];
+    @apply px-4 sm:px-[50px] md:px-[100px] lg:px-[55px] xl:px-[150px] 2xl:px-[200px];
+}
+
+.mt-section {
+    @apply mt-8 lg:mt-[100px] xl:mt-[150px];
 }
 
 .shadow-1 {
