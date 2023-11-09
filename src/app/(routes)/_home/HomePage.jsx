@@ -1,4 +1,3 @@
-import Header from '@/components/header/Header'
 import LayoutDefault from '@/layout/LayoutDefault'
 import React from 'react'
 import HeroSection from './_components/HeroSection/HeroSection'
