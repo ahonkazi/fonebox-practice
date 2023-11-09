@@ -16,15 +16,19 @@ const HeroLeftContent = () => {
     return (
         <div className='hero-left-content relative mt-4 lg:mt-8  lg:w-[40%] xl:w-[37%]'>
             <div className="flex flex-col items-center lg:items-start text-center lg:text-start">
-                <div className="title relative px-8 sm:px-16 lg:px-0 ">
-                    <h1 className='text-[36px] md:text-[40px] lg:text-[45px] xl:text-[55px] 2xl:text-[64px] font-Inter font-medium leading-[120%]'>We <span className='text-Blue'>Build</span> Your Dream</h1>
-                    <div className="title-shape absolute -top-5 left-2 lg:-top-[19%] lg:-left-[8%]">
-                        <svg className='h-[32px] lg:h-[45px] 2xl:h-[51px]' viewBox="0 0 46 51" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15.3914 47.5928C10.9991 46.3455 6.40043 45.7163 1.93946 45.1398C0.978641 45.019 0.0865819 45.6934 0.0179517 46.6434C-0.119309 47.5942 0.567396 48.4637 1.45959 48.5846C5.78329 49.1395 10.2439 49.7333 14.4303 50.9341C15.3225 51.1945 16.2837 50.6584 16.5582 49.7361C16.8328 48.8145 16.2836 47.854 15.3914 47.5928Z" fill="#FF6534" />
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M28.7046 29.9082C21.6357 22.6082 13.6746 16.2479 6.74295 8.75212C6.12528 8.05205 5.0272 8.01455 4.34089 8.66808C3.65459 9.3223 3.58623 10.4224 4.27253 11.1225C11.2042 18.6398 19.1653 25.0209 26.2342 32.3424C26.9205 33.0258 28.0183 33.0355 28.7046 32.3632C29.3223 31.6917 29.3909 30.5916 28.7046 29.9082Z" fill="#FF6534" />
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M41.9508 1.8307C42.1566 6.00885 42.3621 10.187 42.568 14.3658C42.568 15.3229 43.392 16.0618 44.3528 16.0153C45.3136 15.9681 45.9995 15.1534 45.9995 14.1957C45.7936 10.0106 45.5882 5.8262 45.3823 1.6418C45.3136 0.684767 44.4899 -0.0493262 43.5291 0.00276173C42.6369 0.0548497 41.8821 0.87437 41.9508 1.8307Z" fill="#FF6534" />
-                        </svg>
-                    </div>
+                <div className="title  px-8 sm:px-16 lg:px-0 ">
+                    <h1 className='text-[36px] md:text-[40px] lg:text-[45px] xl:text-[55px] 2xl:text-[64px] font-Inter font-medium leading-[120%]'>
+                        <span className='relative '>We
+                            <span className="title-shape absolute left-0 top-0 -translate-y-[50%] -translate-x-[100%]">
+                                <svg className='h-[32px] lg:h-[45px] 2xl:h-[51px]' viewBox="0 0 46 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M15.3914 47.5928C10.9991 46.3455 6.40043 45.7163 1.93946 45.1398C0.978641 45.019 0.0865819 45.6934 0.0179517 46.6434C-0.119309 47.5942 0.567396 48.4637 1.45959 48.5846C5.78329 49.1395 10.2439 49.7333 14.4303 50.9341C15.3225 51.1945 16.2837 50.6584 16.5582 49.7361C16.8328 48.8145 16.2836 47.854 15.3914 47.5928Z" fill="#FF6534" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M28.7046 29.9082C21.6357 22.6082 13.6746 16.2479 6.74295 8.75212C6.12528 8.05205 5.0272 8.01455 4.34089 8.66808C3.65459 9.3223 3.58623 10.4224 4.27253 11.1225C11.2042 18.6398 19.1653 25.0209 26.2342 32.3424C26.9205 33.0258 28.0183 33.0355 28.7046 32.3632C29.3223 31.6917 29.3909 30.5916 28.7046 29.9082Z" fill="#FF6534" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M41.9508 1.8307C42.1566 6.00885 42.3621 10.187 42.568 14.3658C42.568 15.3229 43.392 16.0618 44.3528 16.0153C45.3136 15.9681 45.9995 15.1534 45.9995 14.1957C45.7936 10.0106 45.5882 5.8262 45.3823 1.6418C45.3136 0.684767 44.4899 -0.0493262 43.5291 0.00276173C42.6369 0.0548497 41.8821 0.87437 41.9508 1.8307Z" fill="#FF6534" />
+                                </svg>
+                            </span>
+                        </span> <span className='text-Blue'>Build</span> Your Dream</h1>
+
+
                 </div>
                 <p className='text-[#171717] lg:text-Gray text-base md:text-base px-8 sm:px-16 lg:px-0  2xl:text-lg font-Inter font-normal leading-[160%] mt-5'>
                     We meet you where you are in your journey with market leading hardware, sottware, and services to make you more resilient, agile, and sustainable.
