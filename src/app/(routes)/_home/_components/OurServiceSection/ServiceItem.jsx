@@ -2,7 +2,7 @@ import React from 'react'
 
 const ServiceItem = ({ svg = '', title = '', text = '', }) => {
     return (
-        <div className="pb-[80px] xs:px-[10%] sm:px-0">
+        <div className="pb-[80px] xs:px-[10%] select-none sm:px-0">
             <div className="slider-item  cursor-pointer">
                 <div className="item-header flex justify-center sm:justify-between items-start">
                     <div className="icon border-2 border-Coral bg-CoralLight w-fit py-4 px-6 rounded">

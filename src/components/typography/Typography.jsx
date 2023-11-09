@@ -1,11 +1,19 @@
 import React from 'react'
 
-export const SectionTitle = ({ subTitle = 'Sub title here', title = 'Title Here', nextLine = null }) => {
+export const SectionTitle = ({ subTitle = 'Sub title here', title = 'Title Here', nextLine = null, responsive = false, mdTitle = '', mdNextLine = '' }) => {
     return (
         <div className="section-title flex flex-col items-center lg:block text-center lg:text-start w-full font-Inter lg:w-fit">
             <p className='text-Blue xl:text-lg 2xl:text-xl font-medium leading-[160%] '>{subTitle}</p>
             <div className="lg:mt-2 2xl:mt-3 w-fit relative">
-                <h1 className='text-[32px] lg:text-[40px] xl:text-[48px] font-medium 2xl:text-[56px] leading-[130%] '>{title}</h1>
+
+                {responsive ? <>
+                    <h1 className='hidden md:block text-[32px] lg:text-[40px] xl:text-[48px] font-medium 2xl:text-[56px] leading-[130%] '>{title}</h1>
+                    <h1 className='md:hidden text-[32px] lg:text-[40px] xl:text-[48px] font-medium 2xl:text-[56px] leading-[130%] '>{mdTitle}</h1>
+                </>
+                    : <h1 className='text-[32px] lg:text-[40px] xl:text-[48px] font-medium 2xl:text-[56px] leading-[130%] '>{title}</h1>
+                }
+
+
                 <div className="absolute top-[50%] -translate-y-[100%] left-full">
                     <svg className='h-[32px] lg:h-[35px] 2xl:h-[42px]' viewBox="0 0 38 42" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fillRule="evenodd" clipRule="evenodd" d="M25.2853 39.1941C28.9138 38.1669 32.7127 37.6487 36.3978 37.174C37.1915 37.0745 37.9284 37.6299 37.9851 38.4123C38.0985 39.1953 37.5313 39.9113 36.7942 40.0109C33.2225 40.4678 29.5377 40.9569 26.0793 41.9458C25.3423 42.1602 24.5482 41.7187 24.3214 40.9592C24.0946 40.2002 24.5483 39.4092 25.2853 39.1941Z" fill="#FF6534" />
@@ -15,10 +23,16 @@ export const SectionTitle = ({ subTitle = 'Sub title here', title = 'Title Here'
 
                 </div>
             </div>
-            {nextLine && (
-                <h1 className='text-[32px] lg:text-[40px] xl:text-[48px] font-medium 2xl:text-[56px] leading-[130%] '>{nextLine}</h1>
+            {
+                responsive ? <>
+                    <h1 className='text-[32px] md:hidden lg:text-[40px] xl:text-[48px] font-medium 2xl:text-[56px] leading-[130%] '>{mdNextLine}</h1>
+                    <h1 className='text-[32px] hidden md:block lg:text-[40px] xl:text-[48px] font-medium 2xl:text-[56px] leading-[130%] '>{nextLine}</h1>
 
-            )}
+                </> :
+                    nextLine && (
+                        <h1 className='text-[32px] lg:text-[40px] xl:text-[48px] font-medium 2xl:text-[56px] leading-[130%] '>{nextLine}</h1>
+                    )
+            }
         </div>)
 }
 
