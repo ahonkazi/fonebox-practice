@@ -8,10 +8,10 @@ const HeroSection = () => {
 
   return (
     <>
-      <main style={{ backgroundImage: "url(" + HeroBg?.src + ")" }} className='relative hidden md:block bg-white py-8 bg-no-repeat bg-top sm:bg-right-bottom'>
+      <main style={{ backgroundImage: "url(" + HeroBg?.src + ")" }} className='relative mt-6 hidden md:block bg-white py-8 bg-no-repeat bg-top sm:bg-right-bottom'>
         <MainContent />
       </main>
-      <main className='relative block md:hidden bg-white py-8 bg-no-repeat bg-top sm:bg-right-bottom'>
+      <main className='relative mt-6 block md:hidden bg-white py-8 bg-no-repeat bg-top sm:bg-right-bottom'>
         <MainContent />
       </main>
     </>
