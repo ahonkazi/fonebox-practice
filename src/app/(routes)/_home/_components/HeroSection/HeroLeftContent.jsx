@@ -5,6 +5,7 @@ import client3 from '../../_assets/client-3.jpg'
 import client4 from '../../_assets/client-4.jpg'
 import client5 from '../../_assets/client-5.png'
 import Image from 'next/image'
+import { motion } from 'framer-motion'
 const HeroLeftContent = () => {
     const clients = [
         { img: client1 },
@@ -16,7 +17,7 @@ const HeroLeftContent = () => {
     return (
         <div className='hero-left-content relative mt-4 lg:mt-8  lg:w-[40%] xl:w-[37%]'>
             <div className="flex flex-col items-center lg:items-start text-center lg:text-start">
-                <div className="title  px-8 sm:px-16 lg:px-0 ">
+                <motion.div transition={{ delay: 0.5 }} initial={{ x: '-200px' }} animate={{ x: 0 }} className="title  px-8 sm:px-16 lg:px-0 ">
                     <h1 className='text-[36px] md:text-[40px] lg:text-[45px] xl:text-[55px] 2xl:text-[64px] font-Inter font-medium leading-[120%]'>
                         <span className='relative '>We
                             <span className="title-shape absolute left-0 top-0 -translate-y-[50%] -translate-x-[100%]">
@@ -27,9 +28,7 @@ const HeroLeftContent = () => {
                                 </svg>
                             </span>
                         </span> <span className='text-Blue'>Build</span> Your Dream</h1>
-
-
-                </div>
+                </motion.div>
                 <p className='text-[#171717] lg:text-Gray text-base md:text-base px-8 sm:px-16 lg:px-0  2xl:text-lg font-Inter font-normal leading-[160%] mt-5'>
                     We meet you where you are in your journey with market leading hardware, sottware, and services to make you more resilient, agile, and sustainable.
                 </p>
