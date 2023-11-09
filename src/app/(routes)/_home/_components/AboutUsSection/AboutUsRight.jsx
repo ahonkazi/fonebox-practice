@@ -12,13 +12,13 @@ const AboutUsRight = () => {
                 Fonebox Automation Reports Fourth Quarter and Full Year 2023 Results;<br className='hidden lg:block' /> Introduces Fiscal 2024 Guidance. <br className='hidden lg:block' />
                 New MagneMover LITE Operator Runtime Tool from Fonebox Automation <br className='hidden lg:block' /> Empowers People with Real-Time Data. We provide best automation products.
             </p>
-
+            
             <div className="mt-6 flex justify-center lg:block 2xl:mt-[40px]">
                 <div className="relative w-fit">
                     <button className='px-20 duration-300 hover:text-Coral hover:bg-transparent border border-Coral py-2.5 bg-Coral text-white rounded'>See more</button>
                     <div className="absolute right-0 bottom-0 translate-x-[50%] translate-y-[50%]">
                         <svg className='h-[50px] 2xl:h-[65px]' viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="32.5" cy="32.5" r="32.5" fill="#FF6534" fill-opacity="0.24" />
+                            <circle cx="32.5" cy="32.5" r="32.5" fill="#FF6534" fillOpacity="0.24" />
                         </svg>
                     </div>
                 </div>

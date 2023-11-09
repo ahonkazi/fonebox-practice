@@ -19,6 +19,7 @@ const Nav = () => {
 
     return (
         <>
+        
             <nav className={`Navbar z-[100] site-container py-4 shadow-3 bg-white `}>
                 <NavInner />
                 <DeshktopSearch />

@@ -12,12 +12,13 @@ const SidebarMenu = () => {
         if (pathName === path) {
             window.scrollTo(0, 0)
         } else {
-            router.replace(path);
+            router.push(path);
         }
     }
     return (
+        
         <ul className="sidebar-menu mt-8 h-full px-6 flex flex-col">
-            <li onClick={() => themeContext.setSidebarStatus(false)} className='w-full'>
+            <li key={12} onClick={() => themeContext.setSidebarStatus(false)} className='w-full'>
                 <button onClick={() => handleTop('/')} className={`font-medium text-start uppercase ${pathName === '/' ? 'text-Purple' : 'text-white'} w-full block cursor-pointer font-Exo  px-2 py-1.5 rounded-md  text-lg`}>
                     Home
                 </button>

@@ -16,11 +16,11 @@ const DesktopNav = () => {
         if (pathName === path) {
             window.scrollTo(0, 0)
         } else {
-            router.replace(path);
+            router.push(path);
         }
     }
     return (
-
+        
         <div className="justify-between items-center hidden lg:flex">
             <div className="logo">
                 <button onClick={() => handleTop('/')}><Image alt='logo' src={Logo} /></button>

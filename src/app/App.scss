@@ -9,6 +9,7 @@
 html {
     scroll-behavior: smooth;
     scrollbar-width: thin;
+    overflow-x: hidden;
 }
 
 .site-container {
@@ -16,7 +17,15 @@ html {
 }
 
 .mt-section {
-    @apply mt-8 lg:mt-[100px] xl:mt-[150px];
+    @apply mt-[50px] lg:mt-[100px] xl:mt-[150px];
+}
+
+.mt-wrapper {
+    @apply mt-8 lg:mt-[20px] xl:mt-[50px] 2xl:mt-[75px];
+}
+
+.section-left-shape {
+    @apply absolute top-[20%]   sm:top-[30%] left-[1%] lg:left-6 2xl:left-[3%] lg:translate-y-[50%];
 }
 
 .shadow-1 {
