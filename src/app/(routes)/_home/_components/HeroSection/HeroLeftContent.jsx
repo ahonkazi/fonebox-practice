@@ -11,7 +11,7 @@ const HeroLeftContent = () => {
         { img: client1 },
         { img: client2 },
         { img: client3 },
-        { img: client4 },
+        { img: client4 }, 
         { img: client5 },
     ]
     return (
@@ -35,7 +35,7 @@ const HeroLeftContent = () => {
                 <div className="hero-button-group px-6 lg:px-0 w-full py-8 font-Inter font-medium grid grid-cols-1 sm:grid-cols-2 lg:flex gap-4">
                     <button className='lg:px-16 hover:bg-transparent hover:text-Coral hover:border-Coral border  border-transparent duration-300 text-sm lg:text-base  py-2.5 2xl:px-20 2xl:py-3 rounded-full sm:rounded-md relative  bg-Coral text-white'>
                         Contact us
-                        <span className='absolute -top-[50%] -left-5 pointer-events-none  '>
+                        <span className='absolute -top-[50%] -left-5 pointer-events-none '>
                             <svg className='w-[50px] h-[50px]' viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="32.5" cy="32.5" r="32.5" fill="#FF6534" fillOpacity="0.24" />
                             </svg>
@@ -48,7 +48,7 @@ const HeroLeftContent = () => {
                     <div className="images flex ml-[18px] lg:ml-0">
                         {
                             clients.map((item, index) =>
-                                <Image key={index + 1} style={{ "transform": `translateX(-${index * 9}px)` }} className={`w-[50px] 2xl:w-[57px] border-[4px] border-white h-[50px] 2xl:h-[57px] rounded-full`} src={item?.img} alt='client' />
+                                <Image key={index + 1} style={{ "transform": `translateX(-${index * 9}px)` }} className={`w-[50px] 2xl:w-[57px] border-[4px] border-white h-[50px] 2xl:h-[57px] rounded-full object-cover`} src={item?.img} alt='client' />
                             )
                         }
                     </div>
