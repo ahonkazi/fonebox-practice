@@ -9,8 +9,8 @@ const ExperienceProductSection = () => {
   return (
     <div className="experience-section site-container mt-section ">
       {/* top */}
-      <div className="flex justify-between p-5">
-        <div>
+      <div className="flex flex-col-reverse md:flex-row justify-between p-5">
+        <div className="w-[80%] mr-10">
           <SectionTitle
             subTitle="Experience Product"
             title="Experience The Power"
@@ -19,15 +19,15 @@ const ExperienceProductSection = () => {
             mdNextLine="The Power of Technology"
             responsive={true}
           />
-          <p className="w-96 text-justify text-[#4C4C4C]  font-Inter">
+          <p className="w-[70%] mx-auto md:mx-0 text-justify text-[#4C4C4C] font-Inter">
             Fonebox Automation Helps Manufacturers Solve Challenging Problems,
             Introduces New Industrial Data Ops Solution. Fonebox Automation
             provide best automation products.
           </p>
         </div>
-        <div className=" h-[200px] xs:h-[220px] 2xl:h-[350px] rounded-2xl  overflow-hidden">
+        <div className="w[30%] h-[200px] xs:h-[220px] 2xl:h-[350px] rounded-2xl flex justify-center items-center  overflow-hidden">
           <Image
-            className="h-full rounded-2xl object-cover w-full object-center"
+            className="rounded-2xl object-cover w-full"
             src={exp1}
             alt="experience1-img"
           />
@@ -35,8 +35,8 @@ const ExperienceProductSection = () => {
       </div>
 
       {/* Bottom */}
-      <div className="flex mt-10 relative p-5">
-        <div className=" h-[260px] xs:h-[330px] 2xl:h-[350px] rounded-2xl  overflow-hidden">
+      <div className="flex justify-between mt-10 relative p-5">
+        <div className="w-[70%]">
           <Image
             className="h-full rounded-2xl object-cover w-full object-center"
             src={exp2}
@@ -45,7 +45,7 @@ const ExperienceProductSection = () => {
           
         </div>
         <div className="mx-10 ">
-          <div className="w-56 mb-5 ">
+          <div className="w-56 mb-10 ">
             <p className="text-[18px] xs:text-[20px] 2xl:text-[22px] font-medium font-Inter leading-[120%]">Future Technology</p>
             <p className="text-Gray 2xl:text-[18px] text-sm xs:text-base my-1.5 font-Inter leading-[160%] ">Fonebox Automation provide best automation products.</p>
           </div>
