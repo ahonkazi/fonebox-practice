@@ -37,7 +37,7 @@ const Sidebar = () => {
                     <button className='bg-Coral duration-200 uppercase text-white w-full py-2 rounded-full'>Sign up</button>
                 </div>
             </aside>
-
+            
 
             {
                 themeContext.sidebarStatus && (

@@ -1,15 +1,50 @@
 "use client"
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import NavInner from './NavInner'
 import '../header.scss'
 import DeshktopSearch from './DeshktopSearch'
+import { GetThemeContext } from '@/context/ThemeContext'
 const Nav = () => {
     const [isSticky, setIsSticky] = useState(false);
-
+    const themeContext = useContext(GetThemeContext);
     useEffect(() => {
         window.addEventListener('scroll', (e) => {
-            if (window.scrollY > 72) {
+
+            if (window.scrollY > 100) {
+                setIsSticky(true)
+            } else {
+                setIsSticky(false)
+            }
+        })
+    }, [])
+
+    return (
+
+        <AnimatePresence>
+
+            {isSticky && (
+                <motion.nav initial={{ y: '-100%' }} animate={{ y: 0 }} transition={{ duration: 0.3, delay: 0.3 }} className={`Navbar site-container py-4 z-[50] fixed top-0 left-0 w-full shadow-3 bg-white `}>
+                    <NavInner />
+                    <DeshktopSearch />
+
+                </motion.nav>
+            )}
+        </AnimatePresence>
+
+    )
+}
+
+export default Nav
+
+
+
+export const NavNotFixed = () => {
+    const [isSticky, setIsSticky] = useState(false);
+    const themeContext = useContext(GetThemeContext);
+    useEffect(() => {
+        window.addEventListener('scroll', (e) => {
+            if (window.scrollY > 100) {
                 setIsSticky(true)
             } else {
                 setIsSticky(false)
@@ -19,26 +54,20 @@ const Nav = () => {
 
     return (
         <>
-            <nav className={`Navbar z-[100] site-container py-4 shadow-3 bg-white `}>
+            <nav className={`Navbar z-[100] relative site-container py-4 shadow-3 bg-white `}>
                 <NavInner />
-                <DeshktopSearch />
+                <AnimatePresence>
+
+                    {!isSticky && (
+                        <motion.nav style={{ overflow: 'clip' }} initial={{ y: 0 }} >
+                            <DeshktopSearch />
+                        </motion.nav>
+                    )}
+                </AnimatePresence>
 
             </nav>
-
-
-            <AnimatePresence>
-
-                {isSticky && (
-                    <motion.nav initial={{ y: '-100%' }} animate={{ y: 0 }} transition={{ duration: 0.3, delay: 0.5 }} className={`Navbar  site-container py-4 z-[50] fixed top-0 left-0 w-full shadow-3 bg-white `}>
-                        <NavInner />
-                        <DeshktopSearch />
-
-                    </motion.nav>
-                )}
-            </AnimatePresence>
 
         </>
     )
 }
 
-export default Nav

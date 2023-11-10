@@ -19,7 +19,10 @@ module.exports = {
       colors: {
         'Blue': '#2299F3',
         'Coral': '#FF6534',
+        'CoralLight': '#FFDACE',
         'Purple': '#63256B',
+        'Gray': '#424242',
+        'LightGray': '#FFE0D6',
       },
       fontFamily: {
         'Roboto': ['Roboto'],

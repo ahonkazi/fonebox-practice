@@ -1,13 +1,19 @@
 import React from 'react'
 import TopNav from './components/TopNav';
-import Nav from './components/Nav';
+import Nav, { NavNotFixed } from './components/Nav';
 const Header = () => {
     return (
-        <>
-            <TopNav />
-            <Nav />
-        </>
+        <Nav />
     )
 }
 
 export default Header
+
+export const HeaderNotFixed = () => {
+    return (
+        <>
+            <TopNav />
+            <NavNotFixed />
+        </>
+    )
+}

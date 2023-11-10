@@ -9,10 +9,23 @@
 html {
     scroll-behavior: smooth;
     scrollbar-width: thin;
+    overflow-x: hidden;
 }
 
 .site-container {
-    @apply px-4 md:px-8 lg:px-[60px] xl:px-[80px];
+    @apply px-4 sm:px-[50px] md:px-[80px] lg:px-[55px] xl:px-[150px] 2xl:px-[200px];
+}
+
+.mt-section {
+    @apply mt-[50px] lg:mt-[100px] xl:mt-[150px];
+}
+
+.mt-wrapper {
+    @apply mt-8 lg:mt-[40px] xl:mt-[50px] 2xl:mt-[75px];
+}
+
+.section-left-shape {
+    @apply absolute top-[20%]   sm:top-[30%] left-[1%] lg:left-6 2xl:left-[3%] lg:translate-y-[50%];
 }
 
 .shadow-1 {
@@ -28,7 +41,8 @@ html {
 }
 
 .shadow-3 {
-    box-shadow: #f2f1f1dd 0px 10px 20px;
+    box-shadow: #efefef 0px 2px 5px 0px;
+    // box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 .shadow-red {

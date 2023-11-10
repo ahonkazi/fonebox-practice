@@ -5,6 +5,7 @@ import { FiSearch } from 'react-icons/fi'
 
 const DeshktopSearch = () => {
     const themeContext = useContext(GetThemeContext)
+    
     return (
         <div className="hidden lg:block">
             <AnimatePresence>

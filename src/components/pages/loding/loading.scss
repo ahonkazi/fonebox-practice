@@ -1,0 +1,61 @@
+.loadingpage {
+    .back {
+        margin: 1em auto;
+        font-family: "Exo";
+
+    }
+
+    .back .line {
+        height: 5px;
+        width: 100%;
+        background-color: #e7e5e1;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 50%;
+            background-color: #F2C640;
+            animation: loading 3s infinite;
+
+
+        }
+    }
+
+    .back span {
+        color: white;
+        background: #262B37;
+        display: table-cell;
+        text-transform: uppercase;
+
+    }
+
+
+    @keyframes loading {
+        0% {
+            width: 0%;
+        }
+
+        40% {
+            width: 40%;
+        }
+
+        50% {
+            width: 40%;
+        }
+
+        90% {
+            width: 60%;
+        }
+
+        100% {
+            width: 100%;
+        }
+    }
+
+
+
+}
