@@ -14,13 +14,15 @@ const DesktopNav = () => {
     const router = useRouter();
     const handleTop = (path) => {
         if (pathName === path) {
+            themeContext.setdeshtopSearchBarStatus(false);
             window.scrollTo(0, 0)
+
         } else {
             router.push(path);
         }
     }
     return (
-        
+
         <div className="justify-between items-center hidden lg:flex">
             <div className="logo">
                 <button onClick={() => handleTop('/')}><Image alt='logo' src={Logo} /></button>

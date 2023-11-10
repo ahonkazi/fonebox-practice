@@ -1,14 +1,18 @@
 "use client"
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import NavInner from './NavInner'
 import '../header.scss'
 import DeshktopSearch from './DeshktopSearch'
+import { GetThemeContext } from '@/context/ThemeContext'
 const Nav = () => {
     const [isSticky, setIsSticky] = useState(false);
-
+    const themeContext = useContext(GetThemeContext);
     useEffect(() => {
         window.addEventListener('scroll', (e) => {
+            setTimeout(() => {
+                themeContext.setdeshtopSearchBarStatus(false)
+            }, 300)
             if (window.scrollY > 72) {
                 setIsSticky(true)
             } else {
@@ -19,10 +23,17 @@ const Nav = () => {
 
     return (
         <>
-        
+
             <nav className={`Navbar z-[100] site-container py-4 shadow-3 bg-white `}>
                 <NavInner />
-                <DeshktopSearch />
+                <AnimatePresence>
+
+                    {!isSticky && (
+                        <motion.nav style={{ overflow: 'clip' }} initial={{ y: 0 }} >
+                            <DeshktopSearch />
+                        </motion.nav>
+                    )}
+                </AnimatePresence>
 
             </nav>
 
