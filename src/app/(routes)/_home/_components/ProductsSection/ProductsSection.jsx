@@ -4,7 +4,7 @@ import ProductSlider from './ProductSlider'
 
 const ProductsSection = () => {
   return (
-    <section className='our-products site-container mt-section'>
+    <section className='our-products site-container '>
       <SectionTitle title='Our Products' subTitle='Products' />
       <ProductSlider />
     </section>

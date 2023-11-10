@@ -25,7 +25,7 @@ const ExperienceProductSection = () => {
             provide best automation products.
           </p>
         </div>
-        <div className="w[30%] h-[200px] xs:h-[220px] 2xl:h-[350px] rounded-2xl flex justify-center items-center  overflow-hidden">
+        <div className="w-[30%] h-[200px] xs:h-[220px] 2xl:h-[350px] rounded-2xl flex justify-center items-center  overflow-hidden">
           <Image
             className="rounded-2xl object-cover w-full"
             src={exp1}
@@ -42,7 +42,7 @@ const ExperienceProductSection = () => {
             src={exp2}
             alt="experience2-img"
           />
-          
+
         </div>
         <div className="mx-10 ">
           <div className="w-56 mb-10 ">
@@ -55,21 +55,21 @@ const ExperienceProductSection = () => {
           </div>
         </div>
         <span className="absolute -bottom-0.5 -left-0.5 z-10  pointer-events-none ">
-            <svg
-              className="w-[50px] h-[50px]"
-              viewBox="0 0 65 65"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <circle
-                cx="32.5"
-                cy="32.5"
-                r="32.5"
-                fill="#2298F1"
-                fillOpacity="0.6"
-              />
-            </svg>
-          </span>
+          <svg
+            className="w-[50px] h-[50px]"
+            viewBox="0 0 65 65"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              cx="32.5"
+              cy="32.5"
+              r="32.5"
+              fill="#2298F1"
+              fillOpacity="0.6"
+            />
+          </svg>
+        </span>
 
       </div>
 

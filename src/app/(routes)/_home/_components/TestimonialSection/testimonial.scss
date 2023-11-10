@@ -1,0 +1,15 @@
+.testimonial-item {
+
+    .profession {
+        position: relative;
+        @apply pb-1 2xl:pb-3;
+
+        &::after {
+            position: absolute;
+            content: '';
+            width: 80%;
+
+            @apply bg-CoralLight h-[1.5px] 2xl:h-[3px] top-full left-[50%] -translate-x-[50%];
+        }
+    }
+}
