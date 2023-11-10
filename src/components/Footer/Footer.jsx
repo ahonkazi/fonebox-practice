@@ -70,7 +70,7 @@ function LeftComponent() {
     { icon: <FaLinkedinIn />, link: "#" },
   ];
   return (
-    <div className="flex flex-col justify-center lg:justify-between items-center mx-auto w-[60%]   lg:w-[25%] p-5 relative ">
+    <div className="flex flex-col justify-center lg:justify-between items-center lg:items-start mx-auto w-[60%]   lg:w-[25%] p-5 relative ">
       <div>
         <Image className="w-[50%]" src={logo} alt="experience1-img" />
         <p className="text-xs my-5 text-justify font-thin font-Inter">
