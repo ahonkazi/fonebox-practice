@@ -12,12 +12,12 @@ import { NavNotFixed } from '@/components/header/components/Nav'
 const LayoutDefault = ({ children }) => {
     const [loading, setLoading] = useState(true);
 
-    setTimeout(() => {
-        setLoading(false);
-    }, 2000)
-    if (loading) {
-        return <LoadingPage />;
-    }
+    // setTimeout(() => {
+    //     setLoading(false);
+    // }, 2000)
+    // if (loading) {
+    //     return <LoadingPage />;
+    // }
     return (
         <Provider>
             <Header />
