@@ -17,7 +17,7 @@ const SidebarMenu = () => {
     }
     return (
         
-        <ul className="sidebar-menu mt-8 h-full px-6 flex flex-col">
+        <ul className="sidebar-menu mt-8 h-full px-6 flex flex-col overflow-y-auto">
             <li key={12} onClick={() => themeContext.setSidebarStatus(false)} className='w-full'>
                 <button onClick={() => handleTop('/')} className={`font-medium text-start uppercase ${pathName === '/' ? 'text-Purple' : 'text-white'} w-full block cursor-pointer font-Exo  px-2 py-1.5 rounded-md  text-lg`}>
                     Home
