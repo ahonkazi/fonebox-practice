@@ -1,0 +1,29 @@
+.ProductPagination {
+    @apply flex items-center gap-2 flex-wrap justify-center md:flex-nowrap select-none;
+
+
+}
+
+.ProductPagination .pagination-item {
+    @apply xl:px-4 border border-transparent xl:py-2 rounded xl:bg-MidGray text-black font-medium 2xl:text-lg;
+
+
+}
+
+.ProductPagination .active-link {
+    @apply text-Coral xl:text-black xl:border-Coral;
+}
+
+.ProductPagination .prev {
+    @apply px-3 text-sm xl:text-base xl:px-5 shrink-0 border border-Coral py-2 rounded bg-Coral text-white font-medium 2xl:text-lg;
+
+}
+
+.ProductPagination .next {
+    @apply px-3 text-sm xl:text-base xl:px-5 shrink-0 border border-Coral py-2 rounded bg-Coral text-white font-medium 2xl:text-lg;
+
+}
+
+.ProductPagination .disabled {
+    @apply opacity-70;
+}

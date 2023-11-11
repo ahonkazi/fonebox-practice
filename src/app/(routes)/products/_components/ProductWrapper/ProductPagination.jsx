@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from 'react'
 import ReactPaginate from 'react-paginate';
-import './ProductPagination.scss';
+import './ProductPagination.css';
 const ProductPagination = () => {
     let itemsPerPage = 15;
     let totalPage = 4;
