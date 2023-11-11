@@ -92,7 +92,7 @@ export const NavSecondary = () => {
         <AnimatePresence>
 
             {isSticky && (
-                <motion.nav initial={{ y: '-100%' }} animate={{ y: 0 }} transition={{ duration: 0.3, delay: 0.3 }} className={`Navbar site-container py-4 z-[50] fixed top-0 left-0 w-full shadow-3 bg-white `}>
+                <motion.nav initial={{ y: '-100%' }} animate={{ y: 0 }} transition={{ duration: 0.3, delay: 0.3 }} className={`Navbar site-container py-5 z-[50] fixed top-0 left-0 w-full shadow-3 bg-white `}>
                     <DesktopNavSecondary />
                     <MobileNav />
                     <DeshktopSearch />
@@ -118,7 +118,7 @@ export const NavSecondaryNotFixed = () => {
 
     return (
         <>
-            <nav className={`Navbar z-[100] relative site-container py-4 shadow-3 bg-white `}>
+            <nav className={`Navbar z-[100] relative site-container py-5 shadow-3 bg-white `}>
                 <DesktopNavSecondary />
                 <MobileNav />
                 <AnimatePresence>

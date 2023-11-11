@@ -1,11 +1,11 @@
 "use client"
 import React, { useEffect, useRef } from 'react'
-import PortfolioItem from './PortfolioItem'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
 import { ButtonSwiperNext, ButtonSwiperPrev } from '@/components/button/Buttons';
+import BlogCard from '@/components/cards/BlogCard';
 const PortfolioSlider = () => {
     const navigationPrevRef = useRef(null)
     const navigationNextRef = useRef(null)
@@ -40,19 +40,29 @@ const PortfolioSlider = () => {
                 >
 
                     <SwiperSlide>
-                        <PortfolioItem />
+                        <div className="pt-[50px]">
+                            <BlogCard />
+                        </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <PortfolioItem />
+                        <div className="pt-[50px]">
+                            <BlogCard />
+                        </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <PortfolioItem />
+                        <div className="pt-[50px]">
+                            <BlogCard />
+                        </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <PortfolioItem />
+                        <div className="pt-[50px]">
+                            <BlogCard />
+                        </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <PortfolioItem />
+                        <div className="pt-[50px]">
+                            <BlogCard />
+                        </div>
                     </SwiperSlide>
 
 

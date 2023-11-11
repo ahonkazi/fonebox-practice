@@ -1,6 +1,6 @@
 "use client"
 import Header, { HeaderNotFixed, HeaderSecondary, HeaderSecondaryNotFixed } from '@/components/header/Header'
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Provider from './Provider'
 import Sidebar from '@/components/sidebar/Sidebar'
 import Footer from '@/components/Footer/Footer'
@@ -13,24 +13,28 @@ import CartSidebar from '@/components/cartSidebar/CartSidebar'
 
 const LayoutDefault = ({ children }) => {
     const [loading, setLoading] = useState(true);
-
     setTimeout(() => {
         setLoading(false);
     }, 2000)
-    if (loading) {
-        return <LoadingPage />;
-    }
+
     return (
-        <Provider>
-            <Header />
-            <Sidebar />
-            <CartSidebar />
-            <MomentumScroll>
-                <HeaderNotFixed />
-                {children}
-            </MomentumScroll>
-            <Footer />
-        </Provider>
+        <>
+            {loading && (
+                <LoadingPage />
+
+            )}
+            <Provider>
+                <Header />
+                <Sidebar />
+                <CartSidebar />
+                <MomentumScroll>
+                    <HeaderNotFixed />
+                    {children}
+                    <Footer />
+                </MomentumScroll>
+
+            </Provider>
+        </>
     )
 }
 
@@ -40,24 +44,33 @@ export default LayoutDefault
 export const LayoutSecondary = ({ children }) => {
     const [loading, setLoading] = useState(true);
 
-    // setTimeout(() => {
-    //     setLoading(false);
-    // }, 2000)
+
+    setTimeout(() => {
+        setLoading(false);
+    }, 2100)
+
+
     // if (loading) {
     //     return <LoadingPage />;
     // }
     return (
-        <Provider>
-            <HeaderSecondary />
-            <Sidebar />
-            <CartSidebar />
-            <MomentumScroll>
-                <HeaderSecondaryNotFixed />
-                {children}
-            </MomentumScroll>
-            <Footer />
-            <MobileNavBottom />
+        <>
+            {loading && (
+                <LoadingPage />
 
-        </Provider>
+            )}
+            <Provider>
+                <HeaderSecondary />
+                <Sidebar />
+                <CartSidebar />
+                <MomentumScroll>
+                    <HeaderSecondaryNotFixed />
+                    {children}
+                    <Footer />
+                </MomentumScroll>
+                <MobileNavBottom />
+
+            </Provider>
+        </>
     )
 }

@@ -2,7 +2,7 @@ import React from 'react'
 import './loading.scss'
 const LoadingPage = () => {
     return (
-        <div className='fixed loadingpage top-0 bg-Blue left-0 w-full h-full flex items-center justify-center'>
+        <div className='fixed z-[1000] loadingpage top-0 bg-Blue left-0 w-full h-full flex items-center justify-center'>
 
 
             <span className="back">

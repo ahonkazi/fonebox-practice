@@ -5,7 +5,7 @@ import FilterTags from './FilterTags'
 
 const Filter = () => {
     return (
-        <div className='w-[300px] fixed shrink-0 lg:static 2xl:w-[324px]'>
+        <div className='w-[300px] hidden lg:block shrink-0 lg:static 2xl:w-[324px]'>
             <FilterSearch />
             <FilterCategories />
             <FilterTags />
@@ -14,3 +14,4 @@ const Filter = () => {
 }
 
 export default Filter
+

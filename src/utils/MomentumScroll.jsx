@@ -31,7 +31,7 @@ const MomentumScroll = ({ children }) => {
     const springPhysics = {
         damping: 22,
         mass: 0.1,
-        stiffness: 250,
+        stiffness: 280,
         bounce: 0.5,
         duration: 0.3,
         velocity: 100,

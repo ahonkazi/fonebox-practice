@@ -11,13 +11,13 @@ const HeroLeftContent = () => {
         { img: client1 },
         { img: client2 },
         { img: client3 },
-        { img: client4 }, 
+        { img: client4 },
         { img: client5 },
     ]
     return (
         <div className='hero-left-content relative mt-4 lg:mt-8  lg:w-[40%] xl:w-[37%]'>
             <div className="flex flex-col items-center lg:items-start text-center lg:text-start">
-                <motion.div transition={{ delay: 0.5 }} initial={{ x: '-200px' }} animate={{ x: 0 }} className="title  px-8 sm:px-16 lg:px-0 ">
+                <motion.div transition={{ delay: 2 }} initial={{ x: '-200px' }} animate={{ x: 0 }} className="title  px-8 sm:px-16 lg:px-0 ">
                     <h1 className='text-[36px] md:text-[40px] lg:text-[45px] xl:text-[55px] 2xl:text-[64px] font-Inter font-medium leading-[120%]'>
                         <span className='relative '>We
                             <span className="title-shape absolute left-0 top-0 -translate-y-[50%] -translate-x-[100%]">

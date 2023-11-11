@@ -34,8 +34,8 @@ export default ProductCard
 
 export const ProductAnimatedCard = () => {
     return (
-        <div className='bg-white duration-300 hover:shadow-shadow1 rounded-3xl cursor-pointer select-none px-6 py-6 2xl:py-[33px] 2xl:px-[43px]'>
-            <div className="relative  pt-6 pb-[40px]  group bg-gradient-product px-4 rounded-3xl">
+        <div className='bg-white duration-300 group hover:shadow-shadow1 rounded-3xl cursor-pointer select-none px-6 py-6 2xl:py-[33px] 2xl:px-[43px]'>
+            <div className="relative  pt-6 pb-[40px]   bg-gradient-product px-4 rounded-3xl">
                 <Image className='w-full object-cover rounded-3xl' alt={''} src={img2} />
                 <div className="h-full w-full opacity-0 group-hover:opacity-100 duration-300 overflow-y-hidden  pb-4 rounded-3xl bg-Gradient-Product top-0 left-0 absolute">
                     <div className="h-full relative w-full flex flex-col justify-end items-center">
@@ -75,11 +75,11 @@ export const ProductAnimatedCard = () => {
                 <p className='product-text mt-2 leading-[160%] text-sm lg:text-base text-Gray'>
                     Fonebox Automation  provide best automation products.
                 </p>
-                <div className="flex mt-4 items-center justify-between">
+                <div className="flex mt-4 items-center justify-between flex-wrap-reverse">
                     <div className="">
                         <RatingStar />
                     </div>
-                    <div className="flex items-center">
+                    <div className="flex items-center ">
                         <p className='leading-[120%] text-base lg:text-xl font-medium text-Coral'>105$</p>
                         <p className='text-Coral text-sm'>(20% Off)</p>
                     </div>
