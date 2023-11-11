@@ -6,3 +6,7 @@ export function range(start, end) {
     return array;
 
 }
+
+export function load() {
+    console.log("Loading");
+}
