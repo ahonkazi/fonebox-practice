@@ -1,5 +1,5 @@
 "use client"
-import Header, { HeaderNotFixed, HeaderSecondary, HeaderSecondaryNotFixed } from '@/components/header/Header'
+import Header, { HeaderNotFixed, HeaderProduct, HeaderProductNotFixed } from '@/components/header/Header'
 import React, { useEffect, useState } from 'react'
 import Provider from './Provider'
 import Sidebar from '@/components/sidebar/Sidebar'
@@ -10,6 +10,7 @@ import TopNav from '@/components/header/components/TopNav'
 import { NavNotFixed } from '@/components/header/components/Nav'
 import MobileNavBottom from '@/components/header/MobileNavBottom'
 import CartSidebar from '@/components/cartSidebar/CartSidebar'
+import { FilterSidebar } from '@/app/(routes)/products/_components/Filter/Filter'
 
 const LayoutDefault = ({ children }) => {
     const [loading, setLoading] = useState(true);
@@ -41,7 +42,7 @@ const LayoutDefault = ({ children }) => {
 export default LayoutDefault
 
 
-export const LayoutSecondary = ({ children }) => {
+export const LayoutProducts = ({ children }) => {
     const [loading, setLoading] = useState(true);
 
 
@@ -49,10 +50,6 @@ export const LayoutSecondary = ({ children }) => {
         setLoading(false);
     }, 2100)
 
-
-    // if (loading) {
-    //     return <LoadingPage />;
-    // }
     return (
         <>
             {loading && (
@@ -60,11 +57,12 @@ export const LayoutSecondary = ({ children }) => {
 
             )}
             <Provider>
-                <HeaderSecondary />
+                <HeaderProduct />
                 <Sidebar />
+                <FilterSidebar />
                 <CartSidebar />
                 <MomentumScroll>
-                    <HeaderSecondaryNotFixed />
+                    <HeaderProductNotFixed />
                     {children}
                     <Footer />
                 </MomentumScroll>

@@ -34,12 +34,12 @@ export default ProductCard
 
 export const ProductAnimatedCard = () => {
     return (
-        <div className='bg-white duration-300 group hover:shadow-shadow1 rounded-3xl cursor-pointer select-none px-6 py-6 2xl:py-[33px] 2xl:px-[43px]'>
+        <div className='bg-white duration-300 group shadow-shadow1 sm:shadow-none sm:hover:shadow-shadow1 rounded-3xl cursor-pointer select-none px-6 py-6 2xl:py-[33px] 2xl:px-[43px]'>
             <div className="relative  pt-6 pb-[40px]   bg-gradient-product px-4 rounded-3xl">
                 <Image className='w-full object-cover rounded-3xl' alt={''} src={img2} />
-                <div className="h-full w-full opacity-0 group-hover:opacity-100 duration-300 overflow-y-hidden  pb-4 rounded-3xl bg-Gradient-Product top-0 left-0 absolute">
+                <div className="h-full w-full opacity-100 sm:opacity-0 group-hover:opacity-100 duration-300 overflow-y-hidden  pb-4 rounded-3xl bg-Gradient-Product top-0 left-0 absolute">
                     <div className="h-full relative w-full flex flex-col justify-end items-center">
-                        <button className='w-[80%] group-hover:translate-y-0 duration-300 translate-y-[100px]  py-2 font-medium  bg-Coral text-white rounded'>Add to cart</button>
+                        <button className='w-[80%]  translate-y-0 sm:group-hover:translate-y-0 duration-300 sm:translate-y-[100px]  py-2 font-medium  bg-Coral text-white rounded'>Add to cart</button>
                         <div className="absolute flex flex-col gap-2 top-4 right-4">
                             <button className=' bg-white shadow-1 text-[#2299F3] flex items-center justify-center    w-8 h-8  text-lg rounded-full'>
                                 <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">

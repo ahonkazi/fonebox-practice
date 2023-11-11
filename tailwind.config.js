@@ -18,7 +18,8 @@ module.exports = {
         'Gradient-Product': 'linear-gradient(180deg, rgba(255, 101, 52, 0.20) 0%, rgba(144, 203, 248, 0.20) 100%)'
       },
       boxShadow: {
-        'shadow1': "rgba(0, 0, 0, 0.2) 0px 18px 50px -10px"
+        'shadow1': "rgba(0, 0, 0, 0.2) 0px 18px 50px -10px",
+        'shadowBox': "rgba(149, 157, 165, 0.2) 0px 8px 24px",
       },
       colors: {
         'Blue': '#2299F3',

@@ -1,5 +1,5 @@
 import React from 'react'
-import LayoutDefault, { LayoutSecondary } from '@/layout/LayoutDefault';
+import LayoutDefault, { LayoutProducts } from '@/layout/LayoutDefault';
 import Filter from './_components/Filter/Filter';
 import ProductWrapper from './_components/ProductWrapper/ProductWrapper';
 import FlashProducts from './_components/FlashProducts/FlashProducts';
@@ -8,7 +8,7 @@ import { ProductContext } from '@/context/ProductContext';
 export default function Page() {
   return (
     <>
-      <LayoutSecondary>
+      <LayoutProducts>
         <ProductContext>
           <div className="site-container mt-page">
             <div className="flex gap-7 2xl:gap-[30px]">
@@ -23,7 +23,7 @@ export default function Page() {
             </div>
           </div>
         </ProductContext>
-      </LayoutSecondary>
+      </LayoutProducts>
 
     </>
   )

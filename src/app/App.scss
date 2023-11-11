@@ -61,9 +61,11 @@ html {
     box-shadow: rgba(222, 4, 26, 0.25) 0px 50px 100px -20px, rgba(230, 2, 2, 0.3) 0px 30px 60px -30px;
 }
 
+
 .filter-item {
-    @apply mt-wrapper bg-white shadow-box rounded-2xl lg:py-[25px] 2xl:py-[40px];
+    @apply  bg-white lg:rounded-2xl lg:py-[25px] 2xl:py-[40px];
 }
+
 
 // .gradient-product {
 //     background-image: linear-gradient(180deg, rgba(255, 101, 52, 0.20) 0%, rgba(144, 203, 248, 0.20) 100%);

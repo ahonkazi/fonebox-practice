@@ -6,11 +6,11 @@ import FilterHeader from './FilterHeader';
 const FilterCategories = () => {
     const productContext = useContext(GetProductContext);
     return (
-        <div className='filter-item'>
+        <div className='filter-item lg:mt-[40px] xl:mt-[50px] 2xl:mt-[75px] lg:shadow-shadowBox'>
             <FilterHeader>Categories</FilterHeader>
             {
                 productContext.categories?.map((category, index) =>
-                    <div key={index} className="filter-list lg:pt-[14px] 2xl:pt-[30px] lg:px-[25px]  2xl:px-[44px]">
+                    <div key={index} className="filter-list pt-[14px] 2xl:pt-[30px] px-[25px]  2xl:px-[44px]">
                         <div className="">
                             <h3 className='text-[18px] 2xl:text-[24px] font-medium'>{category?.name}</h3>
                             <div className="line mt-2 2xl:mt-[12px] w-full h-[2px] 2xl:h-[2.5px] bg-[#f0f0f0] rounded-full relative after:content-[''] after:absolute after:left-0 after:top-0 after:w-[25%] after:rounded-full after:h-full after:bg-Blue"></div>

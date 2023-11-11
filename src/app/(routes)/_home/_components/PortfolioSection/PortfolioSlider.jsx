@@ -40,27 +40,27 @@ const PortfolioSlider = () => {
                 >
 
                     <SwiperSlide>
-                        <div className="pt-[50px]">
+                        <div className="pb-[50px]">
                             <BlogCard />
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="pt-[50px]">
+                        <div className="pb-[50px]">
                             <BlogCard />
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="pt-[50px]">
+                        <div className="pb-[50px]">
                             <BlogCard />
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="pt-[50px]">
+                        <div className="pb-[50px]">
                             <BlogCard />
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className="pt-[50px]">
+                        <div className="pb-[50px]">
                             <BlogCard />
                         </div>
                     </SwiperSlide>

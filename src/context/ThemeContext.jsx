@@ -6,6 +6,7 @@ export const ThemeContext = ({ children }) => {
     const [sidebarStatus, setSidebarStatus] = useState(false);
     const [deshtopSearchBarStatus, setdeshtopSearchBarStatus] = useState(false);
     const [cartSidebarStatus, setCartSidebarStatus] = useState(false);
+    const [filterSidebarStatus, setFilterSidebarStatus] = useState(false);
     const menuItems = [
         { title: 'Products', path: '/products' },
         { title: 'Service', path: '/service' },
@@ -14,6 +15,6 @@ export const ThemeContext = ({ children }) => {
         { title: 'Sales & Partners', path: '/sales-and-partners' },
     ]
     return (
-        <GetThemeContext.Provider value={{ cartSidebarStatus, setCartSidebarStatus, sidebarStatus, setSidebarStatus, menuItems, deshtopSearchBarStatus, setdeshtopSearchBarStatus }}>{children}</GetThemeContext.Provider>
+        <GetThemeContext.Provider value={{ cartSidebarStatus, filterSidebarStatus, setFilterSidebarStatus, setCartSidebarStatus, sidebarStatus, setSidebarStatus, menuItems, deshtopSearchBarStatus, setdeshtopSearchBarStatus }}>{children}</GetThemeContext.Provider>
     )
 }

@@ -6,7 +6,7 @@ import '../header.scss'
 import DeshktopSearch from './DeshktopSearch'
 import { GetThemeContext } from '@/context/ThemeContext'
 import DesktopNav, { DesktopNavSecondary } from './DesktopNav'
-import MobileNav from './MobileNav'
+import MobileNav, { MobileNavProducts } from './MobileNav'
 const Nav = () => {
     const [isSticky, setIsSticky] = useState(false);
     const themeContext = useContext(GetThemeContext);
@@ -73,7 +73,7 @@ export const NavNotFixed = () => {
     )
 }
 
-export const NavSecondary = () => {
+export const NavProduct = () => {
     const [isSticky, setIsSticky] = useState(false);
     const themeContext = useContext(GetThemeContext);
     useEffect(() => {
@@ -94,7 +94,7 @@ export const NavSecondary = () => {
             {isSticky && (
                 <motion.nav initial={{ y: '-100%' }} animate={{ y: 0 }} transition={{ duration: 0.3, delay: 0.3 }} className={`Navbar site-container py-5 z-[50] fixed top-0 left-0 w-full shadow-3 bg-white `}>
                     <DesktopNavSecondary />
-                    <MobileNav />
+                    <MobileNavProducts />
                     <DeshktopSearch />
 
                 </motion.nav>
@@ -103,7 +103,7 @@ export const NavSecondary = () => {
 
     )
 }
-export const NavSecondaryNotFixed = () => {
+export const NavProductNotFixed = () => {
     const [isSticky, setIsSticky] = useState(false);
     const themeContext = useContext(GetThemeContext);
     useEffect(() => {
@@ -120,7 +120,7 @@ export const NavSecondaryNotFixed = () => {
         <>
             <nav className={`Navbar z-[100] relative site-container py-5 shadow-3 bg-white `}>
                 <DesktopNavSecondary />
-                <MobileNav />
+                <MobileNavProducts />
                 <AnimatePresence>
                     {!isSticky && (
                         <motion.nav style={{ overflow: 'clip' }} initial={{ y: 0 }} >
