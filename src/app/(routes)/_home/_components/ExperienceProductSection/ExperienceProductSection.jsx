@@ -27,7 +27,7 @@ const ExperienceProductSection = () => {
             provide best automation products.
           </p>
         </div>
-        <div className="w[30%] h-[200px] xs:h-[220px] 2xl:h-[350px] rounded-2xl flex justify-center items-center  overflow-hidden">
+        <div className="w-[30%] h-[200px] xs:h-[220px] 2xl:h-[350px] rounded-2xl flex justify-center items-center  overflow-hidden">
           <Image
             className="rounded-2xl object-cover w-full"
             src={exp1}

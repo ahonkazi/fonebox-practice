@@ -40,12 +40,12 @@ export default LayoutDefault
 export const LayoutSecondary = ({ children }) => {
     const [loading, setLoading] = useState(true);
 
-    setTimeout(() => {
-        setLoading(false);
-    }, 2000)
-    if (loading) {
-        return <LoadingPage />;
-    }
+    // setTimeout(() => {
+    //     setLoading(false);
+    // }, 2000)
+    // if (loading) {
+    //     return <LoadingPage />;
+    // }
     return (
         <Provider>
             <HeaderSecondary />
