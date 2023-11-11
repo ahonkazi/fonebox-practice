@@ -13,7 +13,7 @@ html {
 }
 
 .site-container {
-    @apply px-4 sm:px-[50px] md:px-[80px] lg:px-[55px] xl:px-[150px] 2xl:px-[200px];
+    @apply px-4 sm:px-[50px] md:px-[80px] lg:px-[55px] xl:px-[120px] 2xl:px-[200px];
 }
 
 .mt-section {
@@ -23,8 +23,13 @@ html {
 .mt-wrapper {
     @apply mt-8 lg:mt-[40px] xl:mt-[50px] 2xl:mt-[75px];
 }
+
 .pt-wrapper {
     @apply pt-8 lg:pt-[40px] xl:pt-[50px] 2xl:pt-[75px];
+}
+
+.mt-page {
+    @apply mt-8 md:mt-[30px] lg:mt-[60px] xl:mt-[80px] 2xl:mt-[111px]
 }
 
 .section-left-shape {
@@ -56,6 +61,6 @@ html {
     box-shadow: rgba(222, 4, 26, 0.25) 0px 50px 100px -20px, rgba(230, 2, 2, 0.3) 0px 30px 60px -30px;
 }
 
-.gradient-product {
-    background-image: linear-gradient(180deg, rgba(255, 101, 52, 0.20) 0%, rgba(144, 203, 248, 0.20) 100%);
-}
+// .gradient-product {
+//     background-image: linear-gradient(180deg, rgba(255, 101, 52, 0.20) 0%, rgba(144, 203, 248, 0.20) 100%);
+// }
