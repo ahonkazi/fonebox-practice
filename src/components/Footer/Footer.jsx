@@ -26,7 +26,7 @@ const Footer = () => {
               Team
             </a>
             <a href="#" className="font-thin text-sm py-3">
-              FAC's
+              FAC&apos;s
             </a>
             <a href="#" className="font-thin text-sm py-3">
               Join as influencer
