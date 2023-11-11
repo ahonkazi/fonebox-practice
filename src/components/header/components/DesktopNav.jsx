@@ -83,12 +83,15 @@ export const DesktopNavSecondary = () => {
 
         <div className="justify-between items-center hidden lg:flex">
             <div className="logo">
-                <button onClick={() => handleTop('/')}><Image alt='logo' src={Logo} /></button>
+                <Link href={'/'}><Image alt='logo' src={Logo} /></Link>
             </div>
             <ul className='flex items-center'>
                 {themeContext?.menuItems?.map((item, index) =>
-                    <li onClick={() => handleTop(item.path)} key={index} className='navItem'>
-                        <p className={`navLink cursor-pointer ${pathName === item.path ? 'active' : ''}`}>{item?.title}</p>
+                    <li key={index} className='navItem'>
+                        <Link href={item.path}>
+                            <p className={`navLink cursor-pointer ${pathName === item.path ? 'active' : ''}`}>{item?.title}</p>
+
+                        </Link>
                     </li>
                 )}
             </ul>

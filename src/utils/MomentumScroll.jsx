@@ -7,9 +7,13 @@ const MomentumScroll = ({ children }) => {
     const [scrollableHeight, setScrollableHeight] = useState(0);
 
     const resizeScrollableHeight = useCallback((entries) => {
-        for (let entry of entries) {
+        // for (let entry of entries) {
+        //     setScrollableHeight(entry.contentRect.height);
+        // }
+        entries.forEach(entry => {
             setScrollableHeight(entry.contentRect.height);
-        }
+
+        });
     }, []);
 
     useEffect(() => {
