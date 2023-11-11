@@ -6,6 +6,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo:wght@200;300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
+* {
+    font-family: 'Inter';
+}
+
 html {
     scroll-behavior: smooth;
     scrollbar-width: thin;
@@ -63,7 +67,7 @@ html {
 
 
 .filter-item {
-    @apply  bg-white lg:rounded-2xl lg:py-[25px] 2xl:py-[40px];
+    @apply bg-white lg:rounded-2xl lg:py-[25px] 2xl:py-[40px];
 }
 
 
