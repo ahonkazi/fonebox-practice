@@ -1,6 +1,5 @@
 "use client"
-import React, { useMemo, useState } from 'react'
-import ReactPaginate from 'react-paginate';
+import React, { useState } from 'react'
 import './ProductPagination.css';
 import Pagination from '@/utils/Pagination';
 const ProductPagination = () => {
