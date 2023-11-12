@@ -54,13 +54,13 @@ const Pagination = (props) => {
             >
                 <div className={`${prevClassName ? prevClassName : ''}`}>Previous</div>
             </li>
-            {paginationRange.map((pageNumber) => {
+            {paginationRange.map((pageNumber, index) => {
                 if (pageNumber === DOTS) {
-                    return <li className={`${dotsClassName ? dotsClassName : ''}`}>&#8230;</li>;
+                    return <li key={index} className={`${dotsClassName ? dotsClassName : ''}`}>&#8230;</li>;
                 }
 
                 return (
-                    <li
+                    <li key={index}
                         className={`${paginationItemClassName ? paginationItemClassName : ''} ${currentPage === pageNumber ? (activeClassName ? activeClassName : '') : ''} `}
                         onClick={() => onPageChange(pageNumber)}
                     >
